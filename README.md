@@ -1,16 +1,16 @@
-# lan-settings
+# lan-manager
 用于设置操作系统的局域网设置的Node模块（Node >= v7.6）, 支持 Windows、macOS, 后续会支持 Linux
 
-![LAN Settings](https://raw.githubusercontent.com/imweb/lan-settings/master/assets/settings.png)
+![LAN Settings](https://raw.githubusercontent.com/imweb/lan-manager/master/assets/settings.png)
 
 
 ## 安装
-`npm i --save lan-settings`
+`npm i --save lan-manager`
 
 
 ## 使用 (Promise/Async)
 ```js
-const lan = require('lan-settings');
+const lan = require('lan-manager');
 
 
 // 获取设备的所有可用 NetworkServices (macOS Only)
@@ -80,7 +80,7 @@ lan.reset()
 
 ## 使用 (Callback)
 ```js
-const lan = require('lan-settings');
+const lan = require('lan-manager');
 // 获取设备的所有可用 NetworkServices (macOS Only)
 lan.listNetworkServices(function(err, services) {
   console.log(err ? '获取失败' : '获取成功');
@@ -185,4 +185,4 @@ settings如上，如果为null表示清空并关闭所有局域网设置项，`c
 
 
 # License
-[MIT](https://github.com/imweb/lan-settings/blob/master/LICENSE)
+[MIT](https://github.com/imweb/lan-manager/blob/master/LICENSE)

@@ -1,6 +1,6 @@
 {
-  "name": "lan-settings",
-  "version": "1.0.0-beta4",
+  "name": "lan-manager",
+  "version": "1.0.0",
   "description": "LAN settings",
   "main": "lib/index.js",
   "keywords": [
